@@ -1,0 +1,30 @@
+2)create a dictionary with duplicate items and its count pair names = ["apple", "google", "gmail", "yahoo", "gmail", "apple", "gmail", "google"]
+names = ["apple", "google", "gmail", "yahoo", "gmail", "apple", "gmail", "google"]
+
+name_counts = {}
+for name in names:
+    if name in name_counts:
+        name_counts[name] += 1
+    else:
+        name_counts[name] = 1
+
+print(name_counts)
+
+===========
+o/p:{'apple': 2, 'google': 2, 'gmail': 3, 'yahoo': 1}
+===========
+
+3)Flip key and value pair in a dictionary
+
+
+original_dict = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+
+flipped_dict = {value: key for key, value in original_dict.items()}
+
+print(flipped_dict)
+
+============
+o/p:{'value1': 'key1', 'value2': 'key2', 'value3': 'key3'}
+============
+
+ 	

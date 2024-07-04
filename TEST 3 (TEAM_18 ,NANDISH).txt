@@ -1,0 +1,108 @@
+# 1)Input any number find out is it single digit or double 
+# digit or triple digit number ex input is 22 print two digit number.
+
+
+# input_str=int(input('enter number :'))
+# string=str(input_str)
+# print(len(string),':digit no')
+
+
+
+# 2)count how many vowels and consonants numbers and special character is a string.
+# st = '$Python$ Programming edition 1 and the cost of the book is $50.'
+# li=list(st)
+# # print(li)
+# vowels=['a','e','i','o','u','A','E','I','O','U']
+# for ele in li:
+#     if isinstance(ele,(int,float)):
+#         print(ele,li.count(ele))
+#     elif ele in vowels:
+#         print(ele,li.count(ele))   
+
+#     elif ele not in vowels:
+#         print(ele,st.count(ele))
+    
+#     elif ele!=str or ele!=int:
+#         print(ele, li.count(ele))
+
+#     else:
+#         print(ele)        
+    
+
+# 3)print the given inputed number is prime number or not.
+# n=7
+# if n>1:
+#     for ele in range(2,int(n/2)+1):
+#         if (n%ele)==0:
+#             print('it is not prime no:',n)
+#             break
+#         else:
+#             print('prime no:',n)
+
+
+
+# 4)create a dictionary to show duplicate word with count pair.
+# string = 'python is a programming subject and c++ is also a programming subject'
+
+# li=string.split()
+# new_dic={ele:li.count(ele) for ele in li if li.count(ele)>1}
+# print(new_dic)
+
+
+
+# 5)create a list comprehension to show if list contain string data type 
+# reverse the string if integer and float add 10 it other type keep as it is.
+
+# li = ['python',1,2,45,12,2,'java',4+1j]
+# for ele in li:
+#     if isinstance(ele,str):
+#         print(ele[::-1])
+#     elif isinstance(ele, (int,float)):
+#         print(ele+10)    
+#     else:
+#         print(ele)    
+#=====using list comprehension=========
+
+new_li=[ele[::-1] if isinstance(ele,str)  else ele for ele in li ]
+print(new_li)
+
+# 6)create a dictionary comprehension to show dictionary with word and 
+# its count pair only if the word is of even length.
+
+# sentence = "python is a language python programming is easy"
+# li=sentence.split()
+
+# new_dic={ele:li.count(ele) for ele in li if len(ele)%2==0}
+# print(new_dic)
+
+# 7)Write a function which returns the sum of lengths of all the iterables
+# total_length([1, 2, 3], (4, 5))
+# output = 5
+
+# tu=([1,2,3],(4,5))
+# li=list(tu)
+
+# new_li=[]
+# for ele in li[0]:
+#     new_li.append(ele)
+
+# for ele1 in li[1]:
+#     new_li.append(ele1)   
+
+# print(new_li)
+# print(len(new_li))    
+##=========using function==================
+
+# tu=([1,2,3],(4,5))
+# li=list(tu)
+
+# new_li=[]
+# def len_num(numbers):
+#     for ele in numbers[0]:
+#         new_li.append(ele)
+#     for ele1 in numbers[1]:
+#         new_li.append(ele1)    
+
+#     print(new_li,'len of list is :',len(new_li))
+# len_num(li)        
+

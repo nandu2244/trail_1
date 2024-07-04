@@ -1,0 +1,86 @@
+               TUPLE ASSIGNMENT
+================================================
+1)Print sum of elements in tuple
+
+tu=(1,2,3,4,5)
+count=0
+for num in tu:
+  count+=num
+  
+print(count)  
+
+======
+O/P: 15
+==================================================
+
+10)Check if all items in the tuple are the sametu = (33,33,33,33)
+
+
+tu=(33,33,33,33)
+for num in tu:
+  if num ==33:
+    print('values in tuple are same:',num)
+    
+  else:
+    print('values in tuple are not same')
+
+====================================================
+2)Print elements inside the tuple in reverse order
+
+tu_values=(1,2,'python','java',22.5,77,10)
+
+tu_values=tuple(reversed(tu_values))
+print(tu_values)
+
+or: using slicing
+
+tu_values=tu_values[::-1]
+print(tu_values)
+
+o/p:
+(10, 77, 22.5, 'java', 'python', 2, 1)
+
+=======================================================
+3)Print duplicate element in tuple
+
+tu=(1,2,'python',1,3,'python',5,6,3)
+for ele in tu:
+  if tu.count(ele)>1:
+    
+    print('repeated',ele)
+=====================================================
+4)tu = (5,14,15,18,21,25) if num devisible by both 3 and 5 print that number
+
+tu = (5,14,15,18,21,25)
+for i in tu:
+  if i%3==0 and i%5==0:
+    
+    print('number which is didvisible by 3 & 5 is:',i)
+
+o/p:
+number which is didvisible by 3 & 5 is: 15
+
+=======================================================
+5)Print Highest and lowerst number in tuple
+
+tu = (5,14,15,18,21,25)
+print(max(tu),'&',min(tu))
+
+o/p: 25 & 5
+
+=====================================================
+6)Print even indexed elements in the tuple
+
+tu = (5,14,15,18,21,25)
+
+
+for i in range(0,len(tu),2):
+  
+  print('index number:',i, tu[i])
+
+o/p: index number: 0 5
+index number: 2 15
+index number: 4 21
+
+=================================================
+

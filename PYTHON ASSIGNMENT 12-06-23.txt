@@ -1,0 +1,133 @@
+1)add number from 15 to 25
+=============================================================
+
+count=0
+for i in range(15,26):
+    print(i)
+    count+=i
+print('sum of numbers between the range 15 to 25 is:', count)    
+
+======o/p=======
+sum of numbers between the range 15 to 25 is: 220
+====================================================
+
+2)Enter 10 numbers count number of even numbers and odd numbers and sum of even and odd number
+================================================================================================
+x=[1,2,3,4,5,6,7,8,9,10]
+odd_count=0
+even_count=0
+
+count=0
+print('even nos are:')
+for i in x:
+  if i%2==0:
+    print(i,end=' ')
+    count+=i
+    even_count+=1
+  elif i%2!=0:
+    print(i)
+    odd_count+=1
+
+print( )    
+print('count of even no:',even_count)
+print('even no sum:',count)
+print('count of odd_no:',odd_count)
+print(count)
+
+3)input 5 numbers check its completerly divisible by 5 add those numbers
+============================================================================
+count=1
+for i in range(1,6):
+    count+=i
+#     print(i)
+    if i%5==0:
+        print('number wich is divisible by 5 is:',i)
+        print('sum of those  no is:',count)
+
+===========================================================
+o/p: number wich is divisible by 5 is: 5
+sum of those  no is: 16
+=============================================================
+
+4)input 5 subjects marks find total,average marks, if marks greater than 35 pass less than 35 fail count how many subjects are passes and how many are failed
+=============================================================================================================================================================
+
+marks=[25,35,40,50,70]
+pass_marks=35
+count=0
+for i in marks:
+    if i>=35:
+        count+=i
+        avg=count/5
+        print('pass:',i, end=' ')
+
+    else:
+        print('fail')    
+
+print( )        
+print('total marks:',count)
+print('avg marks:',avg)
+
+===========================
+o/p: pass: 35 pass: 40 pass: 50 pass: 70 
+total marks: 195
+avg marks: 39.0
+=============================================
+
+5)5)input 5 numbers, if entered number is in the range of 25 to 75 then add those numbers else count the numbers which are not in range of 25 to 75
+input =5,6,88,25,35
+sum = 60 (25+35)
+count = 3 (5,6,88)
+=======================================================================================================================================================
+
+count=0
+input=[5,6,88,25,35]
+for num in input:
+    for i in range(25,75):
+        if num==i:
+            count+=num
+            print(num)   
+print('sum of two nos:',count) 
+
+==========================================
+o/p: 25
+35
+sum of two nos: 60
+==========================================
+
+6)Count how many Vowels and consonants in a string
+====================================================================================
+vcount = 0;  
+ccount = 0;  
+str = "welcome to aroha";  
+str = str.lower();  
+for i in range(0,len(str)):    
+    if str[i] in ('a',"e","i","o","u"):  
+        vcount = vcount + 1;  
+    elif (str[i] >= 'a' and str[i] <= 'z'):  
+        ccount = ccount + 1;  
+print("Total number of vowel and consonant are" );  
+print(vcount);  
+print(ccount);  
+
+==============================================
+o/p:  Total number of vowel and consonant are
+7
+7
+==================================================
+
+10)Count the number of digits in a given integer
+==============================================================
+
+str='nandish123'
+digit=0
+
+for ch in str:
+  if ch.isdigit():
+    digit=digit+1
+    
+print('digits are:',digit)    
+
+=========================================================
+o/p: digits are: 3
+==============================================

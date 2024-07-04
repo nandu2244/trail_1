@@ -1,0 +1,84 @@
+1)Print list in reverse order
+==================================================
+li=[1,2,3,4,5,6]
+li.sort(reverse=True)
+print(li)
+============================================
+o/p:[6, 5, 4, 3, 2, 1]
+=============================================
+
+2)print even indexed element in list
+=============================================
+li=[1,2,3,4,5,6]
+print('even indexed elements are:',li[2],li[4])
+
+
+
+3)Print integers in a listli = [1,'java',2.3,'5',5,'python']
+===============================================================
+
+li=[1,'java',2,3,5,5,5,'python']
+indeces=[0,2,3,4,5,6]
+integer_values=[]
+for index in indeces:
+    integer_values.append(li[index])
+
+print(integer_values)  
+================================================================
+o/p: [1, 2, 3, 5, 5, 5]
+================================================================
+
+
+4)print only extension in listli = ['gmail.com','yahoo.in','google.com']o/p expected com in com
+===============================================================================================
+
+li = ['gmail.com','yahoo.in','google.com']
+print(len(li))
+print(li[0][6::])
+
+================================
+o/p: 3
+     com  
+=================================
+
+5)find the largest number in the list
+======================================
+
+li=[1,2,5,9,10,20]
+li.sort()
+print(li)
+print('larget number in list is:',li[-1])
+========================================
+
+o/p:[1, 2, 5, 9, 10, 20]
+larget number in list is: 20
+========================================
+
+
+6)print chara) length char should be > 3 b) first and last charcter should be sameli = ['axa','amma','xyz','1221']op = 'axa' 'amma','1221'
+=========================================================================================================================================
+
+li = ['axa','amma','xyz','1221']
+for ch in li:
+    if len(ch)>3 and :
+        print(ch)
+
+===============================================================
+o/p: amma
+     1221
+==============================================================
+
+
+8)Remove duplicate element available in list
+==============================================================
+li=[1,2,3,4,2,4,6,5,3]
+li.sort()
+res=[*set(li)]
+print('original list:',li)
+print('list after removing duplicate elements',res)
+=============================================================
+
+o/p:original list: [1, 2, 2, 3, 3, 4, 4, 5, 6]
+list after removing duplicate elements [1, 2, 3, 4, 5, 6]
+=============================================================
+
